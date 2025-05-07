@@ -5,8 +5,19 @@ import "./SimpleStorage.sol";
 
 contract StorageFactory{
     SimpleStorage[] public storageContracts;
+    address public owner;
 
-    function deploySimpleStorage() public {
+    modifier onlyOwner(){
+        require(msg.sender==owner,"Only owner can deploy");
+        _;
+    }
+
+    constructor(){
+        owner=msg.sender;
+    }
+
+
+    function deploySimpleStorage() public onlyOwner{
         SimpleStorage newStorage = new SimpleStorage();
         storageContracts.push(newStorage);
     }
@@ -19,4 +30,9 @@ contract StorageFactory{
     function getStorageData(uint256 index) public view returns(uint256){
         return storageContracts[index].getFavoriteNumber();
     }
+
+    function getDeployedContractsCount() public view returns(uint256){
+        return storageContracts.length;
+    }
+
 }

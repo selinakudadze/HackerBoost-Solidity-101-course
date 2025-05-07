@@ -12,14 +12,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "deploySimpleStorage",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getDeployedContractsCount",
+				"name": "favoriteNumber",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -31,15 +24,27 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "getFavoriteNumber",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "index",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "getStorageData",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getWithTimeStamp",
 				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
 					{
 						"internalType": "uint256",
 						"name": "",
@@ -66,34 +71,23 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "index",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_data",
+						"name": "_favoriteNumber",
 						"type": "uint256"
 					}
 				],
-				"name": "setStorageData",
+				"name": "storeNumber",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "timestamp",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					}
-				],
-				"name": "storageContracts",
-				"outputs": [
-					{
-						"internalType": "contract SimpleStorage",
-						"name": "",
-						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -113,7 +107,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"StorageFactory.sol": "StorageFactory"
+			"Advancd.sol": "AdvancedStorage"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -127,20 +121,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"SimpleStorage.sol": {
-			"keccak256": "0x4e28d06daa24a8baff0c79726be6668a0008132d03d7205e7a7a5eaa28e2f76d",
+		"Advancd.sol": {
+			"keccak256": "0x73ce8719280ca85031d9db904bb6f60520b21b9fdb3b80cf63986ec6a64e8149",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0b0452dfb0c9cb9d060beaab6d86338ee2cab11a5e77867597787330f2658d39",
-				"dweb:/ipfs/QmSAaAN7XCrwnqFFMgLBvBriPPG8KB2ogXSbAqMMQgPwrn"
+				"bzz-raw://a91bf5e9b68ee5c2c1bf0f4635a818dba38436a244bffea8c9460a5e8f78beb8",
+				"dweb:/ipfs/QmSqEWNfnapoD5Y7vNJvSiRaSYRpkBWbVjcZkCEtoZXfC7"
 			]
 		},
-		"StorageFactory.sol": {
-			"keccak256": "0x2f1c7d96e3c7c79e6dee2ee67f368c5a1114ed5f3ce69373071ff9b1aba13446",
+		"SimpleStorage.sol": {
+			"keccak256": "0x1a95c3755b3ffdeb48d1830b554a5c491868ee3f660d6a3b1642c00185875ac1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fad7df947195a37f809bb1213c8c13070dbf6324614a4e40b4b8953a73793e86",
-				"dweb:/ipfs/QmTnjqNL4h6XD7rqemBY9qNFGkpKY8SMqAepuEBunYqYEj"
+				"bzz-raw://6f10c81eac318d00ba51a91f8d97762e9c367c623ffb3f86ad35aae051864815",
+				"dweb:/ipfs/QmbyZ8ibr3ZiuEAH7Pz2uFfoYf7hgKEicPzDhbfo5QjH8L"
 			]
 		}
 	},

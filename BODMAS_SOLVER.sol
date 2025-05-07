@@ -1,0 +1,1 @@
+//create multiple contracts for each operation and a child that inherits them.
